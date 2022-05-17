@@ -14,7 +14,11 @@ var mailOptions = {
   from: 'anhhung123anhhung123@gmail.com',
   to: 'nguyenthanhkhanhdtu@gmail.com,boss.dx.kingkurri@gmail.com,minhthong.tao96@gmail.com',
   subject: 'HAKER',
-  text: 'Xin chào! Tôi là hacker. Hãy đưa tiền cho tôi'
+  text: 'Xin chào! Tôi là hacker. Hãy đưa tiền cho tôi',
+  attachments: [{
+    filename : 'a.txt',
+    path : __dirname + '/a.txt'
+  }]
 };
 
 transporter.sendMail(mailOptions, function(error, info){
