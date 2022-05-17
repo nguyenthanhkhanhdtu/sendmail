@@ -1,3 +1,5 @@
+The Nodemailer module can be downloaded and installed using npm : npm install nodemailer --save
+
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
